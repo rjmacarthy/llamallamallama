@@ -7,7 +7,7 @@
   import type { Chat as ChatType, ChatMessage } from '$lib/utils/types'
   import { chatsStore, messageStore, chatIdStore } from '$lib/store'
 
-  export let data: PageData & { chats: ChatType[], chatId: string, messages: ChatMessage[] }
+  export let data: PageData & { chats: ChatType[]; chatId: string; messages: ChatMessage[] }
   chatsStore.set(data.chats)
   messageStore.set(data.messages)
   chatIdStore.set(data.chatId)

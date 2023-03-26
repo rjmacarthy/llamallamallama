@@ -49,7 +49,7 @@
 
   const updateChatHistory = (name: string) => {
     chatsStore.update((chats) => {
-      chats.unshift( {
+      chats.unshift({
         id: _.toNumber(id),
         messages: [],
         name,
@@ -82,9 +82,7 @@
       updateMessages(finalMessage, 'assistant')
 
       if (messages.length === 2) {
-        updateChatHistory(
-          _.trim(finalMessage).substring(0, 20)
-        )
+        updateChatHistory(_.trim(finalMessage).substring(0, 20))
       }
 
       resetChat()
@@ -119,10 +117,7 @@
       chatId: _.toNumber(id)
     })
 
-    updateMessages(
-      input,
-      'you'
-    )
+    updateMessages(input, 'you')
 
     handleStream()
   }
@@ -132,7 +127,6 @@
       handleSubmit(e)
     }
   }
-
 </script>
 
 <template lang="pug">

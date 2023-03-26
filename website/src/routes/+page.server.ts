@@ -1,18 +1,18 @@
-import type { PageServerLoad } from './$types';
-import { getChat, getChats }from '$lib/utils/database';
+import type { PageServerLoad } from './$types'
+import { getChat, getChats } from '$lib/utils/database'
 
 export const load = (async ({ url }) => {
-  const chats = await getChats();
-  const chatId = url.searchParams.get('chatId');
+  const chats = await getChats()
+  const chatId = url.searchParams.get('chatId')
   if (chatId) {
-    const messages = await getChat(chatId);
+    const messages = await getChat(chatId)
     return {
       chats,
       chatId,
-      messages,
-    };
+      messages
+    }
   }
   return {
-    chats,
-  };
-}) satisfies PageServerLoad;
+    chats
+  }
+}) satisfies PageServerLoad

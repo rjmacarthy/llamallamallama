@@ -14,7 +14,6 @@ export const GET = (async () => {
   }
 }) satisfies RequestHandler
 
-
 export const POST = (async ({ request }) => {
   const { input } = await request.json()
   const chat = await addChat(input)

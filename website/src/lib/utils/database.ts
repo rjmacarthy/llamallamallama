@@ -74,57 +74,57 @@ export const getChat = async (id: string): Promise<ChatMessage[]> => {
 }
 
 export const addChat = async (input: string): Promise<Chat> => {
-  const statement = db.prepare('INSERT INTO chats (name) VALUES (?)') as sqlite3.RunResult;
-  const name = input.substring(0, 20);
+  const statement = db.prepare('INSERT INTO chats (name) VALUES (?)') as sqlite3.RunResult
+  const name = input.substring(0, 20)
 
   return new Promise((resolve, reject) => {
     statement.run(name, (err) => {
       if (err) {
-        console.error('Add chat error:', err);
-        reject(err);
-        return;
+        console.error('Add chat error:', err)
+        reject(err)
+        return
       }
 
-      const newChatId = statement.lastID;
+      const newChatId = statement.lastID
 
       db.get('SELECT * FROM chats WHERE id = ?', [newChatId], (err, chat) => {
         if (err) {
-          console.error('Get chat error:', err);
-          reject(err);
-          return;
+          console.error('Get chat error:', err)
+          reject(err)
+          return
         }
 
-        resolve(chat as Chat);
-      });
-    });
-  });
+        resolve(chat as Chat)
+      })
+    })
+  })
 }
 
 export const addMessage = async (mesasge: ChatMessageRequest): Promise<ChatMessage> => {
-  const timestamp = Date.now();
+  const timestamp = Date.now()
   const statement = db.prepare(
     'INSERT INTO messages (chat_id, message, sender, timestamp) VALUES (?, ?, ?, ?)'
-  ) as sqlite3.RunResult;
+  ) as sqlite3.RunResult
 
   return new Promise((resolve, reject) => {
     statement.run(mesasge.chatId, mesasge.message, mesasge.sender, timestamp, (err: Error) => {
       if (err) {
-        console.error('Add message error:', err);
-        reject(err);
-        return;
+        console.error('Add message error:', err)
+        reject(err)
+        return
       }
 
-      const newMessageId = statement.lastID;
+      const newMessageId = statement.lastID
 
       db.get('SELECT * FROM messages WHERE id = ?', [newMessageId], (err, message) => {
         if (err) {
-          console.error('Get message error:', err);
-          reject(err);
-          return;
+          console.error('Get message error:', err)
+          reject(err)
+          return
         }
 
-        resolve(message as ChatMessage);
-      });
-    });
-  });
-};
+        resolve(message as ChatMessage)
+      })
+    })
+  })
+}
