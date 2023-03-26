@@ -1,0 +1,4 @@
+backend/models
+backend/__pycache__
+.svelte-kit
+website/db.sqlite3

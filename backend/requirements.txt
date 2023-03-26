@@ -1,0 +1,9 @@
+git+https://github.com/huggingface/transformers.git
+accelerate
+bitsandbytes
+git+https://github.com/huggingface/peft.git
+asyncio
+torch
+yaml
+pydash
+fastapi
