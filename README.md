@@ -45,7 +45,9 @@ This will start the backend server and make it available at http://localhost:800
 
 ### Frontend
 
-To start the frontend, run the following command:
+To start the frontend in development.mode, run the following command:
+
+`npm run dev`
 
 This will start the frontend server and make it available at http://localhost:5173. You can then open this URL in a web browser to access the chat interface.
 
