@@ -77,3 +77,4 @@ I will update this soon with all the credits.
 - Add tests
 - Maintenance
 - Other things
+- Better configuration options
