@@ -1,6 +1,6 @@
-# Llamallamallama
+# llamallamallama
 
-Llamallamallama is a chat solution that allows users to chat with "Llama" fine tuned with LoRa on the "Alpaca" dataset. The solution uses SvelteKit to stream responses from a Python API to the browser.
+llamallamallama is a chat solution that allows users to chat with "Llama" fine tuned with LoRa on the "Alpaca" dataset. The solution uses SvelteKit to stream responses from a Python API to the browser.
 
 The AI model was trained on the alpaca dataset [Alpaca Dataset](https://github.com/tatsu-lab/stanford_alpaca).
 
@@ -53,15 +53,15 @@ This will start the frontend server and make it available at http://localhost:51
 
 ## Contributing
 
-We welcome contributions to the Llamallamallama project!
+We welcome contributions to the llamallamallama project!
 
 ## License
 
-Llamallamallama is licensed under the MIT. See the [LICENSE](LICENSE) file for details.
+llamallamallama is licensed under the MIT. See the [LICENSE](LICENSE) file for details.
 
 ## Credits
 
-Llamallamallama was created by rjmacarty with help from other repositories.
+llamallamallama was created by rjmacarty with help from other repositories.
 
 I will update this soon with all the credits.
 
