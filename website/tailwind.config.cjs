@@ -7,7 +7,7 @@ const config = {
 
   variants: {
     extend: {
-      opacity: ['disabled'],
+      opacity: ['disabled']
     }
   },
 
