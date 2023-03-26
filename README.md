@@ -76,5 +76,5 @@ I will update this soon with all the credits.
 - Refactor
 - Add tests
 - Maintenance
-- Other things
+
 - Better configuration options
