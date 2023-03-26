@@ -8,6 +8,7 @@ The model streaming logic was inspired by [Alpaca-LoRA-Serve](https://github.com
 
 The project uses sqllite to store chat history.
 
+![llamallamallama](./assets/llamallamallama.gif)
 
 ## Installation
 
