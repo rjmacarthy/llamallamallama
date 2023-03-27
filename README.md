@@ -64,7 +64,7 @@ llamallamallama is licensed under the MIT. See the [LICENSE](LICENSE) file for d
 
 ## Credits
 
-llamallamallama was created by rjmacarty with help from other repositories.
+llamallamallama was created by rjmacarthy with help from other repositories.
 
 I will update this soon with all the credits.
 
