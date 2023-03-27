@@ -12,13 +12,15 @@ The project uses sqllite to store chat history.
 
 ## Installation
 
+Copy `backend/config.example.yml` to `config.yml` and edit for personal settings.
+
 ### Backend
 
 To install the backend dependencies, run the following command:
 
 `pip install -r requirements.txt` inside the backend directory.
 
-You will need to add your models inside the `backend/models` folder.
+You will need to add your models inside the `backend/models` folder if using locally to match `config.yml` or use Hugging Face.
 
 ```
 .
