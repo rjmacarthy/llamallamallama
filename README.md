@@ -4,7 +4,7 @@ llamallamallama is a chat solution that allows users to chat with "Llama" fine t
 
 The AI model was trained on the alpaca dataset [Alpaca Dataset](https://github.com/tatsu-lab/stanford_alpaca).
 
-The model streaming logic was inspired by [Alpaca-LoRA-Serve](https://github.com/deep-diver/Alpaca-LoRA-Serve)
+The model streaming logic was inspired by [Alpaca-LoRA-Serve](https://github.com/deep-diver/Alpaca-LoRA-Serve).
 
 The project uses sqllite to store chat history.
 
