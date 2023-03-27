@@ -1,0 +1,7 @@
+model_name: decapoda-research/llama-7b-hf
+ft_model_name: rjmacarthy/llama-alpaca-lora-7b
+temperature: 0.1
+top_p: 0.75
+top_k: 40
+num_beams: 4
+max_new_tokens: 2048
