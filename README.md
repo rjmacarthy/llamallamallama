@@ -30,6 +30,10 @@ You will need to add your models inside the `backend/models` folder if using loc
 
 The fine tuned folder should have the `adapter_model.bin` and `adapter_config.json` files.
 
+### Setup script
+
+Run `./scripts/setup.sh` to copy the configuration file and install the front-end.
+
 ### Frontend
 
 To install the frontend dependencies, run the following command:
