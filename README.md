@@ -39,6 +39,11 @@ Run `./scripts/setup.sh` to copy the configuration file and install the front-en
 To install the frontend dependencies, run the following command:
 `npm install`
 
+### Docker
+
+```
+docker compose up -d
+```
 
 ## Usage
 
