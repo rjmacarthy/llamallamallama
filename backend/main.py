@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.responses import StreamingResponse
 import pydash as _
 import torch
-from path import Path
 
 from stream import stream
 from model import get_model
